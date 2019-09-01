@@ -1,0 +1,18 @@
+/* status
+*******************************************************************/
+
+.status {
+    display: inline-block;
+    padding: 2px 16px;
+    color: $white;
+    &.status-new {
+        background-color: $app-color-7;
+    }
+    &.status-paid {
+        background-color: $app-color-8;
+    }
+    &.status-accepted {
+        background-color: $app-color-4;
+    }
+}
+

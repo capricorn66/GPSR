@@ -1,0 +1,94 @@
+/* forms
+*******************************************************************/
+
+label {
+    font-size: 16px;
+    color: $gray-600;
+}
+
+.daterangepicker select,
+.form-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba($app-color-1,.6);
+    color: $app-color-1;
+    background-color: $white;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 18px;
+    // Placeholder
+    &::placeholder {
+        color: $gray-600;
+        opacity: 1;
+    }
+    &:focus {
+        border-color: $app-color-3;
+        box-shadow: none;
+        color: $app-color-1;
+        &::placeholder {
+            color: $gray-500;
+            opacity: 1;
+        }
+    }
+    &:disabled,
+    &[readonly] {
+        background-color: $gray-200;
+    }
+
+    &.form-control-icon-add-user {
+        padding-left: 48px;
+        background: $white $icon-add-user no-repeat left 10px center;
+        background-size: 24px;
+    }
+
+    &.form-control-icon-calendar {
+        padding-left: 48px;
+        background: $white $icon-calendar no-repeat left 10px center;
+        background-size: 24px;
+    }
+
+    &.form-control-icon-clock {
+        padding-left: 48px;
+        background: $white $icon-clock no-repeat left 10px center;
+        background-size: 24px;
+    }
+
+    &.form-control-lg {
+        height: 56px;
+    }
+    &.form-control-sm {
+        height: 32px;
+    }
+
+}
+.daterangepicker select,
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+        opacity: 0;
+    }
+    background: $white $icon-arrow-down no-repeat right 16px center !important;
+    background-size: 16px;
+    padding-right: 40px;
+
+}
+
+textarea.form-control {
+
+    &.form-control-lg {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+.input-group > .form-control:not(:last-child),
+.input-group > .custom-select:not(:last-child) {
+    border-right: 0;
+}
+.input-group-append .btn {
+    border-left: 0;
+}

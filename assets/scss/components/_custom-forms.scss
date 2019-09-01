@@ -1,0 +1,118 @@
+/* custom-forms
+*******************************************************************/
+.custom-control .custom-control-label {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main-card {
+    .custom-control .custom-control-label {
+        font-size: 16px;
+        color: $app-color-1;
+    }
+}
+
+.custom-control {
+    padding-left: 32px;
+}
+.custom-checkbox .custom-control-label::before,
+.custom-radio .custom-control-label::before {
+    border: $gray-900 solid 1px;
+    width: 18px;
+    height: 18px;
+    top: 0.1rem;
+    left: -32px
+}
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0.15rem;
+}
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $app-color-4;
+    background-color: $app-color-4;
+}
+.custom-control-input:checked ~ .custom-control-label::after,
+.custom-control-input:checked ~ .custom-control-label::after {
+    top: 3px;
+    left: -30px;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-size: 11px;
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: rgba($app-color-4, 0.25);
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba($app-color-4, 0.25);
+}
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    border-color: rgba($app-color-4, 0.25);
+    background-color: rgba($app-color-4, 0.25);
+}
+
+.custom-switch {
+    padding-left: 34px;
+}
+
+.custom-switch .custom-control-label::after {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: $gray-300;
+    top: 2px;
+    left: -34px;
+    box-shadow: 0 1px rgba($gray-800,.4);
+}
+.custom-switch .custom-control-label::before {
+    background-color: $gray-500;
+    border: 0;
+    height: 12px;
+    width: 34px;
+    top: 5px;
+    left: -34px;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: $app-color-4;
+    top: 2px;
+    left: -29px;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: rgba($app-color-4, 0.5);
+}
+
+.card-radio,
+.card-checkbox {
+    position: relative;
+    .card-input {
+        opacity: 0;
+        position: absolute;
+    }
+    .card-input:checked ~ .card-label {
+        box-shadow: 0 0 0 4px $app-color-3 inset;
+    }
+    .card-label {
+        background-color: $white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border: 1px solid rgba($app-color-1, .3);
+        padding: 16px;
+        display: block;
+        font-size: 24px;
+        color: $app-color-1;
+        text-align: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 112px;
+        @include transition(box-shadow ease-in .1s);
+        &:hover {
+            box-shadow: 0 0 0 4px rgba($app-color-3, .2) inset;
+        }
+    }
+}

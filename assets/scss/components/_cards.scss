@@ -1,0 +1,25 @@
+/* cards
+*******************************************************************/
+
+.card-box {
+    box-shadow: 0 0 2px 0 rgba($app-color-1,.2);
+    background-color: $white;
+    .card-box-footer,
+    .card-box-header {
+        padding: 40px;
+        background-color: lighten($app-color-5, 6%);
+        font-size: 32px;
+        text-align: center;
+        line-height: 1.2;
+        @include media-breakpoint-down(md) {
+            font-size: 24px;
+            padding: 16px;
+        }
+    }
+    .card-box-body {
+        padding: 40px;
+        @include media-breakpoint-down(md) {
+            padding: 16px;
+        }
+    }
+}

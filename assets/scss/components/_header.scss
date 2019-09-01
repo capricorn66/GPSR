@@ -1,0 +1,71 @@
+/* header
+*******************************************************************/
+
+header {
+    background-color: $app-color-1;
+    @include media-breakpoint-up(lg) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    position: relative;
+    z-index: 1001;
+    .navbar {
+        padding: 0;
+        .container {
+            @include media-breakpoint-down(sm) {
+                padding-top: 24px;
+                padding-bottom: 24px;
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+            @include media-breakpoint-only(md) {
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+            @include media-breakpoint-only(lg) {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+        }
+
+        .navbar-brand {
+            padding: 0;
+            margin: 0;
+            img {
+                width: auto;
+                height: 64px;
+            }
+        }
+        .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+            @include media-breakpoint-down(xs) {
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+            .nav-link {
+                margin-left: 32px;
+                @include media-breakpoint-down(sm) {
+                    margin: 0 16px;
+                }
+                color: $white;
+                &:hover,
+                &.active {
+                    color: $app-color-4;
+                }
+            }
+
+
+            @include media-breakpoint-up(md) {
+
+            }
+
+        }
+    }
+}

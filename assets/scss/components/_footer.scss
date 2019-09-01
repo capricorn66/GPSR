@@ -1,0 +1,35 @@
+/* footer
+*******************************************************************/
+
+footer {
+    background: $app-color-1;
+    color: white;
+    padding: 64px 0 8px;
+    line-height: 1.5em;
+    font-size: 14px;
+    margin-top: auto;
+    h5 {
+        color: $app-color-4;
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    h6 {
+        color: $gray-700;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    a {
+        color: $white;
+    }
+    ul.nav {
+        list-style: none;
+        padding: 0;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        .nav-item {
+            display: block;
+        }
+    }
+
+}

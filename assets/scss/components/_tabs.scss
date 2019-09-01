@@ -1,0 +1,39 @@
+/* tabs
+*******************************************************************/
+
+.nav-tabs {
+    border-bottom: 1px solid $app-color-3;
+    margin-bottom: 48px;
+    .nav-item {
+        .nav-link {
+            background-color: transparent;
+            font-size: 24px;
+            padding: 16px;
+            border: 0;
+            color: $gray-600;
+            position: relative;
+            &.active {
+                color: $app-color-1;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    height: 6px;
+                    width: 100%;
+                    background: $app-color-3;
+                }
+            }
+        }
+    }
+}
+
+.main-card {
+    .nav-item {
+        text-align: center;
+        flex: 1 0 50%;
+        .nav-link {
+
+        }
+    }
+}

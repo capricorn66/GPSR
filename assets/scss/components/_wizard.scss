@@ -1,0 +1,117 @@
+/* steps
+*******************************************************************/
+
+.wizard {
+    counter-reset: item;
+    list-style: none;
+    padding: 0;
+    margin: 0 60px 48px;
+    @include media-breakpoint-down(md) {
+        margin: 0 -25px 48px;
+    }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    li {
+        position: relative;
+        padding-left: 0;
+        padding-top: 40px;
+        margin-bottom: 16px;
+        font-size: 13px;
+        width: 18%;
+        text-align: center;
+        opacity: .25;
+        &:not(.current) {
+            @include media-breakpoint-down(md) {
+                span {
+                    display: none;
+                }
+            }
+        }
+        @include media-breakpoint-down(md) {
+            span {
+                display: inline-block;
+                margin-left: -16px;
+                margin-right: -16px;
+            }
+        }
+
+        &.done,
+        &.current {
+            opacity: 1;
+        }
+        &:not(.done)::after {
+            content: counter(item);
+        }
+        &::after {
+            counter-increment: item;
+            margin-left: -16px;
+            left: 50%;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: $app-color-3;
+            color: $white;
+            text-align: center;
+            padding: 4px;
+            position: absolute;
+        }
+        &.done::after {
+            content: "\e905";
+            font-family: 'icomoon' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            display: inline-block;
+            vertical-align: middle;
+
+            /* Better Font Rendering =========== */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 18px;
+            padding-top: 6px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            height: 8px;
+            top: 12px;
+            width: 100%;
+            background-color: $app-color-3;
+            display: block;
+            border-right: 1px solid $white;
+        }
+    }
+    + .wizard-nav {
+        margin-top: -132px;
+        margin-bottom: 132px;
+        @include media-breakpoint-down(md) {
+            margin-top: -32px;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.wizard-nav {
+    display: -ms-flexbox;
+    display: flex;
+    .btn-circle {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    @include media-breakpoint-down(md) {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    @include media-breakpoint-up(lg) {
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+

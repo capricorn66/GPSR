@@ -1,0 +1,35 @@
+/* pagination
+*******************************************************************/
+
+.pagination {
+    border-radius: 0;
+    .page-item {
+        margin: 0 4px;
+        &.active {
+            .page-link {
+                background-color: $app-color-1;
+            }
+        }
+        .pagination-divider {
+            display: inline-block;
+            padding-top: 6px;
+        }
+        .page-link {
+            border: 0;
+            border-radius: 16px;
+            height: 32px;
+            padding: 6px;
+            text-align: center;
+            min-width: 32px;
+            color: $gray-800;
+            font-weight: 500;
+            &:focus {
+                box-shadow: none;
+            }
+            i {
+                font-size: 12px;
+                height: 15px;
+            }
+        }
+    }
+}
