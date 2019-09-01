@@ -29,7 +29,7 @@
     }
 
     &.waves-button {
-        font-size: 14px;
+        font-size: 18px;
         -webkit-mask-image: none;
         .waves-ripple {
             z-index: -1;
@@ -50,7 +50,7 @@
             background: $app-color-4;
         }
         &.waves-effect.waves-light .waves-ripple {
-            background: $app-color-6;
+            background: $app-color-3;
         }
 
         &:not(:disabled):not(.disabled).active {

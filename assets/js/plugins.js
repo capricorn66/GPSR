@@ -40,6 +40,8 @@ window.tagglePass = tagglePass;
 
 $(document).ready( function() {
 
+    wavesInit();
+
     $('.date-picker').daterangepicker({
         timePicker: true,
         timePicker24Hour: true,
