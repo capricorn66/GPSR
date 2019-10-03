@@ -38,19 +38,19 @@ label {
     &.form-control-icon-add-user {
         padding-left: 48px;
         background: $white $icon-add-user no-repeat left 10px center;
-        background-size: 24px;
+        background-size: 24px !important;
     }
 
     &.form-control-icon-calendar {
         padding-left: 48px;
         background: $white $icon-calendar no-repeat left 10px center;
-        background-size: 24px;
+        background-size: 24px !important;
     }
 
     &.form-control-icon-clock {
         padding-left: 48px;
         background: $white $icon-clock no-repeat left 10px center;
-        background-size: 24px;
+        background-size: 24px !important;
     }
 
     &.form-control-lg {
@@ -70,7 +70,7 @@ select.form-control {
         opacity: 0;
     }
     background: $white $icon-arrow-down no-repeat right 16px center !important;
-    background-size: 16px;
+    background-size: 16px !important;
     padding-right: 40px;
 
 }

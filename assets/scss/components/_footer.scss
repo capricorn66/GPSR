@@ -8,6 +8,12 @@ footer {
     line-height: 1.5em;
     font-size: 14px;
     margin-top: auto;
+    .brand {
+        img {
+            width: 180px;
+            height: auto;
+        }
+    }
     h5 {
         color: $app-color-4;
         font-weight: 400;

@@ -18,12 +18,23 @@
         padding: 16px 24px;
         vertical-align: middle;
     }
+    tr:first-child {
+        td {
+            border-top: 1px solid $app-color-5;
+        }
+    }
+
+    thead + tbody > tr:first-child {
+        td {
+            border-top: 0;
+        }
+    }
 
     &.table-spec {
         font-size: 16px;
 
         td, th {
-            border: 0;
+            //border: 0;
         }
         th {
             background-color: transparent;
@@ -33,7 +44,7 @@
 
         tbody {
             tr {
-                box-shadow: 0 0 0 2px $white inset, 0 0 0 3px $app-color-5 inset;
+                //box-shadow: 0 0 0 2px $white inset, 0 0 0 3px $app-color-5 inset;
                 &:hover {
                     background-color: $app-color-6;
                 }

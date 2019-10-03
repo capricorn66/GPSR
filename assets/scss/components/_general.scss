@@ -4,8 +4,11 @@
 html {
     position: relative;
     min-height: 100%;
-    font-size: 15px;
+    font-size: 16px;
     scroll-behavior: smooth;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 }
 @media screen and (prefers-reduced-motion: reduce) {
     html {
