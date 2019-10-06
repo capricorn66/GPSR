@@ -2,8 +2,8 @@
 *******************************************************************/
 
 .card-box {
-    box-shadow: 0 0 2px 0 rgba($app-color-1,.2);
     background-color: $white;
+    border: 1px solid $app-color-5;
     .card-box-footer,
     .card-box-header {
         padding: 40px;

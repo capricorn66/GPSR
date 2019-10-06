@@ -16,6 +16,11 @@
     padding-bottom: 0;
 }
 
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+    background-color: $app-color-5;
+}
+
 .daterangepicker .calendar-table th,
 .daterangepicker .calendar-table td {
     padding: 4px;
@@ -26,4 +31,16 @@
 }
 .daterangepicker .drp-selected {
     display: none;
+}
+
+.daterangepicker.timePicker .drp-calendar.left {
+    margin-right: 16px;
+    position: relative;
+    &::after {
+        content: "-";
+        position: absolute;
+        left: 100%;
+        top: 20px;
+        margin-left: 10px;
+    }
 }

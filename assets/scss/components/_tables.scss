@@ -5,10 +5,11 @@
     font-size: 18px;
     font-weight: 400;
     color: $app-color-1;
+    thead th,
     th {
-        font-weight: 700;
+        font-weight: 400;
         background-color: $gray-300;
-        border-bottom: 1px solid $gray-300;
+        border-bottom: 1px solid $app-color-5;
         border-top: 0;
         padding: 8px 24px;
     }
@@ -34,7 +35,7 @@
         font-size: 16px;
 
         td, th {
-            //border: 0;
+            border: 0;
         }
         th {
             background-color: transparent;
@@ -44,7 +45,7 @@
 
         tbody {
             tr {
-                //box-shadow: 0 0 0 2px $white inset, 0 0 0 3px $app-color-5 inset;
+                box-shadow: 0 0 0 2px $white inset, 0 0 0 3px $app-color-5 inset;
                 &:hover {
                     background-color: $app-color-6;
                 }

@@ -6,6 +6,11 @@ label {
     color: $gray-600;
 }
 
+.input-group-text {
+    border: 1px solid rgba($app-color-1,.6);
+    color: $app-color-1;
+}
+
 .daterangepicker select,
 .form-control {
     display: flex;
