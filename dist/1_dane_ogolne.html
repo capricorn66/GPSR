@@ -21,8 +21,6 @@
     <meta name="title" content="GRAPE TOWN">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap&subset=latin-ext" rel="stylesheet">
-
 <link href="css/app.min.css" rel="stylesheet"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -111,8 +109,22 @@
                             <input type="text" class="form-control form-control-icon-clock date-picker" id="input2" placeholder="wybierz">
                         </div>
                         <div class="col-lg-4 mb-32">
-                            <label class="display-4 mb-16" for="input3">Na ile osób?</label>
-                            <input type="text" class="form-control form-control-icon-add-user" id="input3" placeholder="wybierz">
+                            <label class="display-4 mb-16">Na ile osób?</label>
+                            <div class="d-flex ">
+                                <div class="input-group mr-16">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="addon1">Dorośli</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="" aria-describedby="addon1" style="max-width: 56px;">
+                                </div>
+
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="addon2">Dzieci</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="" aria-describedby="addon2" style="max-width: 56px;">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,9 +143,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 mb-32">
-                    <a class="brand" href="#">
-                        <img src="./images/brand-footer.png" alt="">
-                    </a>
+                    <div class="row">
+                        <div class="col-7 col-sm-5 col-md-4 col-lg-9 col-xl-8">
+                            <img src="./images/brand-footer.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-3 mb-32">
                     <h5>ADRES</h5>

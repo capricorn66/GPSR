@@ -231,6 +231,7 @@
     border-radius: 50%;
     border: 1px solid $app-color-5;
     text-align: center;
+    background-color: $white;
     padding-top: 10px;
     @include transition(all ease-in .2s);
     i {
