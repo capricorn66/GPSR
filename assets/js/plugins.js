@@ -42,6 +42,8 @@ $(document).ready( function() {
 
     wavesInit();
 
+    moment.locale('pl');
+
     $('.date-picker').daterangepicker({
         timePicker: true,
         timePicker24Hour: true,
@@ -64,8 +66,10 @@ $(document).ready( function() {
         showDropdowns: true,
         startDate: '+1d',
         cancelClass: "btn-secondary",
+        minYear: parseInt(moment().year() - 5),
+        maxYear: parseInt(moment().year()),
         locale: {
-            format: 'DD/MM/YYYY'
+            format: 'DD.MM.YYYY'
         }
     }).data('daterangepicker');
 
