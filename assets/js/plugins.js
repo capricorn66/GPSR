@@ -63,11 +63,8 @@ $(document).ready( function() {
 
     $('.single-date-picker').daterangepicker({
         singleDatePicker: true,
-        showDropdowns: true,
         startDate: '+1d',
         cancelClass: "btn-secondary",
-        minYear: parseInt(moment().year() - 5),
-        maxYear: parseInt(moment().year()),
         locale: {
             format: 'DD.MM.YYYY'
         }
