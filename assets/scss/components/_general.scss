@@ -34,13 +34,6 @@ body {
     @include media-breakpoint-up(lg) {
         padding-top: 80px;
     }
-    &.full-page {
-        padding-top: 0;
-        position: relative;
-        background-color: $white;
-        background-attachment: fixed;
-    }
-
 }
 
 .container {

@@ -137,6 +137,17 @@
                                             </tr>
                                             <tr>
                                                 <td class="pt-32">
+                                                    <small class="gray-600 d-block pb-1">Nazwa firmy i numer NIP</small>
+                                                    <div>Nowoczesna Firma Sp. z o.o. NIP 5720530800</div>
+                                                </td>
+                                                <td class="text-right pt-32">
+                                                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal5">
+                                                        Edytuj <i class="icon-arrow-right"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pt-32">
                                                     <small class="gray-600 d-block pb-1">Adres</small>
                                                     <div>ul. Siedmiu Krasnoludków 58/15, 62-069 Palędzie</div>
                                                 </td>
@@ -163,6 +174,9 @@
                                                     <div>grzegorz.brzeczyszczykiewicz@gmail.com</div>
                                                 </td>
                                                 <td class="text-right pt-32">
+                                                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal6">
+                                                        Edytuj <i class="icon-arrow-right"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -377,6 +391,68 @@
                                 </button>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-block btn-primary">ZAPISZ</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-block btn-secondary" data-dismiss="modal">ANULUJ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel1">Edytuj dane</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-32">
+                        <label for="" class="pl-8">Nazwa firmy</label>
+                        <input type="text" class="form-control" value="Nowoczesna Firma Sp. z o.o">
+                    </div>
+                    <div class="form-group mb-32">
+                        <label for="" class="pl-8">NIP</label>
+                        <input type="text" class="form-control" value="5720530800">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-block btn-primary">ZAPISZ</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-block btn-secondary" data-dismiss="modal">ANULUJ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="ModalLabel6" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel6">Edytuj dane</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-32">
+                        <label for="" class="pl-8">Adres e-mail</label>
+                        <input type="text" class="form-control" value="grzegorz.brzeczyszczykiewicz@gmail.com">
                     </div>
                 </div>
                 <div class="modal-footer">

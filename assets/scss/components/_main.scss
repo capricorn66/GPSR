@@ -31,3 +31,24 @@ main {
     background-size: cover;
     background-position: center center;
 }
+
+.img-loupe {
+    position: relative;
+    display: inline-block;
+    i {
+        background: rgba($white, .5);
+        border: 0;
+        padding: 6px 8px;
+        position: absolute;
+        z-index: 1;
+        right: 4px;
+        top: 4px;
+        color: $app-color-1;
+        font-size: 16px;
+    }
+    &:hover {
+        i {
+            color: $app-color-3;
+        }
+    }
+}

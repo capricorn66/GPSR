@@ -1,0 +1,66 @@
+/* general
+*******************************************************************/
+
+body.io-page {
+
+    padding-top: 0;
+    position: relative;
+    background-color: $white;
+    background-attachment: fixed;
+
+    .modal-header {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        border-bottom: 0;
+        margin-bottom: 10px;
+        .modal-title {
+            border-top: 1px solid $app-color-3;
+            border-bottom: 1px solid $app-color-3;
+            font-size: 24px;
+            display: inline-block;
+            padding: 8px 64px;
+            font-family: 'Lato', sans-serif;
+        }
+        .brand {
+            margin-bottom: 10px;
+            img {
+                height: 84px;
+            }
+        }
+        .close {
+            position: absolute;
+            right: 0;
+        }
+    }
+    .modal-body {
+        line-height: 1.3em;
+        ol:not([class]) {
+            li {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1.2em;
+                ol {
+                    margin-left: -32px;
+                    li {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+
+            }
+        }
+        p {
+            line-height: 1.3em;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 1em;
+        }
+    }
+}
+

@@ -3,6 +3,9 @@
 
 .modal-dialog {
     max-width: 580px;
+    &.modal-lg {
+        max-width: 960px;
+    }
 }
 
 .modal-content {
@@ -48,5 +51,11 @@
     padding: 0 0 24px;
     @include media-breakpoint-up(md) {
         margin: 16px 80px;
+    }
+}
+
+.modal-dialog-scrollable {
+    .modal-body {
+        padding-right: 40px;
     }
 }

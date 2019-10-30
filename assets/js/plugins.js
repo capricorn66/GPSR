@@ -47,6 +47,7 @@ $(document).ready( function() {
     $('.date-picker').daterangepicker({
         timePicker: true,
         timePicker24Hour: true,
+        autoUpdateInput: false,
         useSeconds: false,
         timePickerIncrement: 30,
         cancelClass: "btn-secondary",
@@ -56,6 +57,8 @@ $(document).ready( function() {
             cancelLabel: 'ANULUJ',
             applyLabel: 'ZAPISZ',
         }
+    }, function(timeStart, timeEnd) {
+        $('.date-picker').val(timeStart.format('HH:mm') + ' - ' + timeEnd.format('HH:mm'));
     }).on('show.daterangepicker', function (ev, picker) {
         picker.container.find(".calendar-table").hide();
         picker.container.addClass('timePicker');
@@ -63,11 +66,14 @@ $(document).ready( function() {
 
     $('.single-date-picker').daterangepicker({
         singleDatePicker: true,
+        autoUpdateInput: false,
         startDate: '+1d',
         cancelClass: "btn-secondary",
         locale: {
             format: 'DD.MM.YYYY'
         }
+    }, function(chosen) {
+        $('.single-date-picker').val(chosen.format('DD.MM.YYYY'));
     }).data('daterangepicker');
 
 });

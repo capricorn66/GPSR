@@ -23,15 +23,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
 <link href="css/app.min.css" rel="stylesheet"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="full-page">
+<body itemscope itemtype="http://schema.org/WebPage" class="io-page">
 
-    <div class="container">
-        <div class="row">
+
+    <div class="row">
             <div class="col-sm-1 col-md-2 col-lg-3 col-xl-6">
                 <div class="page-bg" style="background-image: url('./images/login-bg.jpg')"></div>
             </div>
             <div class="col-sm-11 col-md-10 col-lg-9 col-xl-6">
-                <div class="main-card d-flex flex-column">
+                <div class="main-card mw-520 d-flex flex-column">
 
                     <div class="row justify-content-center flex-grow-1">
                         <div class="col-10 col-lg-9">
@@ -65,11 +65,11 @@
                             <div class="clearfix mb-64"></div>
                             <div class="custom-control custom-checkbox mb-16">
                                 <input type="checkbox" class="custom-control-input" id="control1">
-                                <label class="custom-control-label" for="control1">Oświadczam, że zapoznałem się z  <a href="" class="app-color-3">Regulaminem</a></label>
+                                <label class="custom-control-label" for="control1">Oświadczam, że zapoznałem się z  <a href="" class="app-color-3" data-toggle="modal" data-target="#Modal1">Regulaminem</a></label>
                             </div>
                             <div class="custom-control custom-checkbox mb-16">
                                 <input type="checkbox" class="custom-control-input" id="control2">
-                                <label class="custom-control-label" for="control2">Zgadzam się na przetwarzanie moich danych osobowych zgodnie z  <span class="app-color-3">Polityką prywatności</span></label>
+                                <label class="custom-control-label" for="control2">Zgadzam się na przetwarzanie moich danych osobowych zgodnie z  <span class="app-color-3" data-toggle="modal" data-target="#Modal2">Polityką prywatności</span></label>
                             </div>
                             <div class="clearfix mb-24"></div>
                             <button class="btn btn-primary btn-block">ZALOGUJ SIĘ</button>
@@ -85,8 +85,8 @@
                     <div class="row justify-content-center">
                         <div class="col-10 col-lg-9">
                             <div class="text-center mb-32">
-                                <a href="" class="gray-600 px-16">Regulamin</a>
-                                <a href="" class="gray-600 px-16">Polityka prywatności</a>
+                                <a href="" class="gray-600 px-16" data-toggle="modal" data-target="#Modal1">Regulamin</a>
+                                <a href="" class="gray-600 px-16" data-toggle="modal" data-target="#Modal2">Polityka prywatności</a>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,73 @@
                 </div>
             </div>
         </div>
+
+
+    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="brand">
+                        <img src="./images/brand-main.png" class="img-fluid" alt="GRAPE TOWN">
+                    </div>
+                    <h5 class="modal-title">Regulamin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Postanowienia ogólne
+                            <ol>
+                                <li>Niniejszy Regulamin określa rodzaje, zakres oraz warunki świadczenia usług na rzecz Użytkowników za pomocą Serwisu internetowego dostępnego pod adresem: www.ifirma.pl przez IFIRMA SA z siedzibą we Wrocławiu, przy ul. Grabiszyńskiej 241B, 53-234 Wrocław, wpisanej do rejestru przedsiębiorców prowadzonego przez Sąd Rejonowy dla Wrocławia – Fabrycznej Wydział VI Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS: 0000281947, NIP: 8981647572, REGON: 9310823940, strona internetowa: www.ifirma.pl. </li>
+                                <li>Regulamin jest udostępniony nieodpłatnie pod adresem: www.ifirma.pl w formie, która umożliwia jego pobieranie, utrwalanie oraz wydrukowanie, a w każdym przypadku przed rejestracją Użytkownika w Serwisie.</li>
+                                <li>Przed rejestracją w Serwisie Użytkownik zobowiązany jest zapoznać się z treścią Regulaminu. Zarejestrowanie się Użytkownika w Serwisie jednoznaczne jest z zapoznaniem się i akceptacją przez Użytkownika treści niniejszego Regulaminu wraz z załącznikami oraz zawarciem umowy o świadczenie usług drogą elektroniczną bez konieczności sporządzania odrębnej pisemnej umowy. Użytkownik zobowiązany jest przestrzegać postanowień Regulaminu od momentu rejestracji w Serwisie.</li>
+                                <li>Regulamin ma charakter ogólny względem innych regulaminów, które to regulują kwestie związane ze świadczeniem poszczególnych Usług. Tym samym Regulamin ma zastosowanie w zakresie nieuregulowanym w innym regulaminie. W razie sprzeczności Regulaminu względem postanowień regulaminu określającego zasady świadczenia danej Usługi, pierwszeństwo stosowania mają te ostatnie, chyba, że innych regulaminów nie ma (Regulamin jest jedyną umową).</li>
+                            </ol>
+                        </li>
+                        <li>Definicje
+                            <ol>
+                                <li>Regulamin jest udostępniony nieodpłatnie pod adresem: www.ifirma.pl w formie, która umożliwia jego pobieranie, utrwalanie oraz wydrukowanie, a w każdym przypadku przed rejestracją Użytkownika w Serwisie.</li>
+                                <li>Przed rejestracją w Serwisie Użytkownik zobowiązany jest zapoznać się z treścią Regulaminu. Zarejestrowanie się Użytkownika w Serwisie jednoznaczne jest z zapoznaniem się i akceptacją przez Użytkownika treści niniejszego Regulaminu wraz z załącznikami oraz zawarciem umowy o świadczenie usług drogą elektroniczną bez konieczności sporządzania odrębnej pisemnej umowy. Użytkownik zobowiązany jest przestrzegać postanowień Regulaminu od momentu rejestracji w Serwisie.</li>
+                                <li>Regulamin ma charakter ogólny względem innych regulaminów, które to regulują kwestie związane ze świadczeniem poszczególnych Usług. Tym samym Regulamin ma zastosowanie w zakresie nieuregulowanym w innym regulaminie. W razie sprzeczności Regulaminu względem postanowień regulaminu określającego zasady świadczenia danej Usługi, pierwszeństwo stosowania mają te ostatnie, chyba, że innych regulaminów nie ma (Regulamin jest jedyną umową).</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="brand">
+                        <img src="./images/brand-main.png" class="img-fluid" alt="GRAPE TOWN">
+                    </div>
+                    <h5 class="modal-title">Polityka prywatności</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Zasady przetwarzania danych osobowych Użytkowników</h3>
+                    <p>Spółki Grupy INFOR przywiązują dużą wagę do poszanowania i respektowania praw Internautów, ze szczególnym uwzględnieniem prawa do ochrony prywatności. Przedstawiona poniżej polityka prywatności wyjaśnia stosowane przez nas zasady gromadzenia i przetwarzania danych osobowych.</p>
+                    <p>Spółki Grupy INFOR, zbierając i przetwarzając dane osobowe, stosują się do wszystkich poniższych zasad przetwarzania danych oraz spełniają co najmniej jeden z warunków przetwarzania danych osobowych.</p>
+                    <p>Wyrażając zgodę na wykorzystanie plików cookie przez wszystkie serwisy Grupy INFOR oświadczasz, że Twoja przeglądarka jest ustawiona w tym zakresie zgodnie z Twoimi preferencjami.</p>
+
+                    <h3>Jakie dane o Tobie zbieramy</h3>
+                    <p>Abyś mógł skorzystać z niektórych funkcjonalności oferowanych przez serwis, będziesz musiał się zarejestrować. Podczas rejestracji zapytamy Cię o login i hasło, jakiego będziesz używał na naszej witrynie. Zostaniesz poproszony również o wyrażenie zgody na przetwarzanie Twoich danych osobowych przez Spółki Grupy INFOR.</p>
+                    <p>Podczas Twojej wizyty na naszej stronie internetowej automatycznie zbierane są dane dotyczące Twojej wizyty, w szczególności Twój adres IP, nazwa domeny, typ przeglądarki, typ systemu operacyjnego. Więcej informacji w części poświęconej plikom cookie.</p>
+
+                    <h3>Kto jest administratorem i jak skontaktować się z inspektorem ochrony danych</h3>
+                    <p>Administratorami Twoich danych osobowych są Spółki Grupy INFOR: INFOR PL S.A. z siedzibą: ul. Okopowa 58/72, 01-042 Warszawa; INFOR BIZNES Sp. z o.o. z siedzibą: ul. Okopowa 58/72, 01-042 Warszawa; INFOR IT Sp. z o.o. z siedzibą: ul. Okopowa 58/72, 01-042 Warszawa; IDEORIA Sp. z o.o. z siedzibą: ul. Okopowa 58/72, 01-042 Warszawa;</p>
+                    <p>Z inspektorem ochrony danych można skontaktować się, pisząc na wskazany powyżej adres administratora lub drogą elektroniczną na adres e-mail: iod@infor.pl.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="bs4-xs d-block d-sm-none"></div>
     <div class="bs4-sm d-none d-sm-block d-md-none"></div>
