@@ -44,11 +44,17 @@ $(document).ready( function() {
 
     moment.locale('pl');
 
+    const nowDate = new Date();
+    const minDate = new Date(new Date().setDate(nowDate.getDate()+1))
+    const maxDate = new Date(new Date().setYear(nowDate.getFullYear()+5))
+
     $('.date-picker').daterangepicker({
         timePicker: true,
         timePicker24Hour: true,
         autoUpdateInput: false,
         useSeconds: false,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(4, 'hour'),
         timePickerIncrement: 30,
         cancelClass: "btn-secondary",
         timePickerSeconds: false,
@@ -59,6 +65,10 @@ $(document).ready( function() {
         }
     }, function(timeStart, timeEnd) {
         $('.date-picker').val(timeStart.format('HH:mm') + ' - ' + timeEnd.format('HH:mm'));
+
+        console.log(timeEnd);
+        console.log(timeEnd.format('HH:mm'));
+
     }).on('show.daterangepicker', function (ev, picker) {
         picker.container.find(".calendar-table").hide();
         picker.container.addClass('timePicker');
@@ -67,6 +77,8 @@ $(document).ready( function() {
     $('.single-date-picker').daterangepicker({
         singleDatePicker: true,
         autoUpdateInput: false,
+        minDate: minDate,
+        maxDate: maxDate,
         startDate: '+1d',
         cancelClass: "btn-secondary",
         locale: {
